@@ -1,0 +1,408 @@
+body header {
+  background-color: #131313;
+  height: 85px;
+  border-bottom: 3px solid #e2a122;
+  padding-top: 25px;
+}
+body header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .container .header-logo img {
+  width: 4%;
+}
+body header .container .header-logo a {
+  font-size: 25px;
+  color: white;
+  font-family: Roboto, sans-serif;
+  align-items: center;
+}
+body header .container .header-logo a span {
+  color: #d0951d;
+}
+body header .container nav {
+  margin: auto;
+  margin-right: 250px;
+}
+body header .container nav ul {
+  display: flex;
+}
+body header .container nav ul li {
+  margin-right: 40px;
+}
+body header .container nav ul li a {
+  color: white;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  transition: 0.4s;
+  font-weight: 500;
+}
+body header .container nav ul li:hover a {
+  color: #e2a122;
+}
+body header .container .login-register-btn .cta {
+  position: relative;
+  margin: auto;
+  padding: 0px 24px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+body header .container .login-register-btn .cta:before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  display: block;
+  border-radius: 50px;
+  background: #e2a122;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+body header .container .login-register-btn .cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+body header .container .login-register-btn .cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: white;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+body header .container .login-register-btn .cta:hover:before {
+  width: 100%;
+  background: #e2a122;
+}
+body header .container .login-register-btn .cta:hover svg {
+  transform: translateX(5px);
+}
+body header .container .login-register-btn .cta:active {
+  transform: scale(0.95);
+}
+body main .section-1 {
+  position: relative;
+  transition: backgroun-image 0.5s;
+  background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/slider-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body main .section-1 .container {
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+body main .section-1 .container .text {
+  margin-bottom: 50px;
+  width: 60%;
+}
+body main .section-1 .container .text p {
+  color: #ffffff;
+  font-size: 50px;
+  font-family: Roboto, sans-serif;
+  margin-bottom: 40px;
+}
+body main .section-1 .container .text p span {
+  color: #ffb320;
+}
+body main .section-1 .container .text .read {
+  width: 70%;
+}
+body main .section-1 .container .text .read span {
+  color: #e3e3e3;
+  font-family: Roboto, sans-serif;
+}
+body main .section-1 .container .buttons button {
+  display: block;
+  cursor: pointer;
+  transition: 0.4s;
+}
+body main .section-1 .container .buttons button:hover {
+  background-color: rgb(255, 200, 99);
+  color: white;
+}
+body main .section-1 .container .buttons .readmore {
+  padding: 20px 40px;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  border-radius: 100px;
+  background-color: #ffb320;
+  color: white;
+  fill: none;
+  border: 0px;
+  transition: 0.6s;
+}
+body main .section-1 .container .buttons .readmore:hover {
+  box-shadow: 5px 10px rgba(255, 255, 255, 0.451);
+}
+body main .section-1 .container .buttons .change {
+  margin-top: 180px;
+  margin-left: 2px;
+  display: inline !important;
+  padding: 5px 16px;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  background-color: white;
+  border-radius: 100px;
+  color: #ffb320;
+  border: 0px;
+}
+body main .section-2 .all-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px 0px !important;
+  margin: auto;
+}
+body main .section-2 .all-boxes .box {
+  width: 25%;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+}
+body main .section-2 .all-boxes .box .fixed-btn {
+  position: absolute;
+  z-index: 111;
+  background-color: orange;
+  color: white;
+  padding: 5px 20px;
+  top: 20px;
+  left: 10px;
+  font-family: Robot, sans-serif;
+}
+body main .section-2 .all-boxes .box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+body main .section-2 .all-boxes .box img {
+  width: 100%;
+  filter: brightness(40%);
+  transition: filter 0.6s ease;
+}
+body main .section-2 .all-boxes .box .card-text {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: orange;
+  color: white;
+  transform: translateY(30%);
+  transition: transform 0.6s ease;
+  opacity: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body main .section-2 .all-boxes .box .card-text p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: Robot, sans-serif;
+  font-weight: 700;
+}
+body main .section-2 .all-boxes .box .card-text span {
+  display: block;
+  margin-bottom: 10px;
+  font-family: Robot, sans-serif;
+}
+body main .section-2 .all-boxes .box:hover::before {
+  opacity: 1;
+}
+body main .section-2 .all-boxes .box:hover img {
+  filter: brightness(100%);
+}
+body main .section-2 .all-boxes .box:hover .card-text {
+  transform: translateY(0%);
+  opacity: 1;
+}
+body main .section-3 {
+  background-image: url("https://preview.colorlib.com/theme/gamewarrior/img/recent-game-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #eef2f6;
+}
+body main .section-3 .container .recent-texts {
+  margin: auto;
+  text-align: center;
+}
+body main .section-3 .container .recent-texts button {
+  padding: 5px 20px;
+  color: white;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: rgba(252, 48, 191, 0.779);
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+body main .section-3 .container .recent-texts p {
+  font-size: 35px;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+}
+body main .section-3 .container .recent-game-boxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
+body main .section-3 .container .recent-game-boxes .game-box {
+  width: 32%;
+  background-color: white;
+  position: relative;
+}
+body main .section-3 .container .recent-game-boxes .game-box button {
+  position: absolute;
+  margin: 10px 10px;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  background-color: rgba(252, 48, 191, 0.779);
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+}
+body main .section-3 .container .recent-game-boxes .game-box button i {
+  font-size: 18px;
+}
+body main .section-3 .container .recent-game-boxes .game-box img {
+  width: 100%;
+}
+body main .section-3 .container .recent-game-boxes .game-box .box-text {
+  padding: 15px 9px;
+}
+body main .section-3 .container .recent-game-boxes .game-box .box-text p {
+  font-size: 23px;
+  margin-bottom: 20px;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+}
+body main .section-3 .container .recent-game-boxes .game-box .box-text span {
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  display: block;
+}
+body main .section-3 .container .recent-game-boxes .game-box .box-text .game-comment {
+  font-weight: 700;
+  color: rgba(252, 48, 191, 0.779);
+}
+body main .section-3 .container .recent-game-boxes .game-box .star {
+  position: absolute;
+  bottom: 0;
+  right: 3px;
+  background-color: orange;
+}
+body main .section-3 .container .recent-game-boxes .game-box .like {
+  position: absolute;
+  bottom: 0;
+  right: 43px;
+}
+body main .section-4 {
+  background-image: url("https://preview.colorlib.com/theme/gamewarrior/img/pattern.png");
+}
+body main .section-4 .container button {
+  border: none;
+  padding: 10px 20px;
+  background-color: #fb6e10;
+  color: white;
+  font-weight: 600;
+  margin-top: 100px;
+}
+body main .section-4 .container .tournament-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+body main .section-4 .container .tournament-boxes .tournament-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: #252525;
+  margin-bottom: 50px;
+  margin-right: 20PX;
+  padding: 50px 40px;
+}
+body main .section-4 .container .tournament-boxes .tournament-box button {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background-color: #ffb320;
+  color: #131313;
+}
+body main .section-4 .container .tournament-boxes .tournament-box img {
+  width: 40%;
+  margin-right: 15px;
+}
+body main .section-4 .container .tournament-boxes .tournament-box .tournament-texts .tournament-title {
+  font-size: 25px;
+  color: #ffb320;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+body main .section-4 .container .tournament-boxes .tournament-box .tournament-texts p {
+  color: #686a6d;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  margin-top: 11px;
+}
+body main .section-4 .container .tournament-boxes .tournament-box .tournament-texts p span {
+  color: white;
+  margin-left: 5px;
+}
+body main .section-4 .container .tournament-boxes .tournament-box .tournament-texts .price {
+  margin-top: 20px;
+}
+body footer {
+  background-color: #252525;
+}
+body footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  align-items: center;
+}
+body footer .container span {
+  color: #7295aa;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+}
+body footer .container nav {
+  margin: auto;
+  margin-left: 380px;
+}
+body footer .container nav ul {
+  display: flex;
+}
+body footer .container nav ul li {
+  margin-right: 40px;
+}
+body footer .container nav ul li a {
+  color: #7295aa;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  transition: 0.4s;
+  font-weight: 500;
+}
+body footer .container nav ul li:hover a {
+  color: #e2a122;
+}/*# sourceMappingURL=index.css.map */

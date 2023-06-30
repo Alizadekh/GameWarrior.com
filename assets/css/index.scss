@@ -1,0 +1,478 @@
+body{
+
+    header{
+        background-color: #131313;
+        height: 85px;
+        border-bottom: 3px solid #e2a122;
+        padding-top: 25px;
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .header-logo{
+                img{
+                    width: 4%;
+                }
+                a{
+                    font-size: 25px;
+                    color: white;
+                    font-family: Roboto, sans-serif;
+                    align-items: center;
+
+                    span{
+                        color: #d0951d;
+                    }
+                }
+            }
+
+            nav{
+                margin: auto;
+                margin-right: 250px;
+
+                ul{
+                    display: flex;
+                    
+                    li{
+                        margin-right: 40px;
+                        a{
+                            color: white;
+                            font-size: 16px;
+                            font-family: Roboto, sans-serif;
+                            transition: 0.4s;
+                            font-weight: 500;
+                        }
+
+                        &:hover{
+                            a{
+                                color: #e2a122;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .login-register-btn{
+
+                .cta {
+                    position: relative;
+                    margin: auto;
+                    padding: 0px 24px;
+                    transition: all 0.2s ease;
+                    border: none;
+                    background: none;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                   }
+                   
+                   .cta:before {
+                    content: "";
+                    position: absolute;
+                    left: 5px;
+                    display: block;
+                    border-radius: 50px;
+                    background:  #e2a122;
+                    width: 45px;
+                    height: 45px;
+                    transition: all 0.3s ease;
+                   }
+                   
+                   .cta span {
+                    position: relative;
+                    font-family: "Ubuntu", sans-serif;
+                    font-size: 14px;
+                    font-weight: 700;
+                    letter-spacing: 0.05em;
+                    color: #ffffff;
+                   }
+                   
+                   .cta svg {
+                    position: relative;
+                    top: 0;
+                    margin-left: 10px;
+                    fill: none;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke: white;
+                    stroke-width: 2;
+                    transform: translateX(-5px);
+                    transition: all 0.3s ease;
+                   }
+                   
+                   .cta:hover:before {
+                    width: 100%;
+                    background:  #e2a122;
+                   }
+                   
+                   .cta:hover svg {
+                    transform: translateX(5px);
+                   }
+                   
+                   .cta:active {
+                    transform: scale(0.95);
+                   }
+            }
+        }
+    }
+    main{
+        .section-1{
+            position: relative;
+            transition: backgroun-image .5s;
+            background-image: url(https://preview.colorlib.com/theme/gamewarrior/img/slider-1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            .container{
+                padding-top: 200px;
+                padding-bottom: 50px;
+
+                .text {
+                    margin-bottom: 50px;
+                    width: 60%;
+                    //animation-name: animation;
+                    //animation-duration: 1s;
+                    //animation-delay: 10s; /* Animationın başlama gecikmesi 0s olarak ayarlandı */
+                    //animation-iteration-count: infinite;
+                    //animation-timing-function: ease-in;
+
+                    //@keyframes animation {
+                        //0% {top:0px; opacity: 0; transform: translateY(-100px);}
+                        //25% {top:50px ; opacity: 0.25; }
+                        //50% {top:100px; opacity: 0.5;}
+                        //75% {top:150px; opacity: 0.75;}
+                        //100% {top:200px; opacity: 1;}  
+                    //}
+                    p{
+                        color: #ffffff;
+                        font-size: 50px;
+                        font-family: Roboto, sans-serif;
+                        margin-bottom: 40px;
+                        span{
+                            color: #ffb320;
+                        }
+                    }
+                    .read{
+                        width: 70%;
+                        span{
+                            color: #e3e3e3;
+                            font-family: Roboto, sans-serif;
+                        }
+                    }
+                }
+                .buttons{
+                    button{
+                        display: block;
+                        cursor: pointer;
+                        transition: 0.4s;
+                        &:hover{
+                            background-color: rgb(255, 200, 99);
+                            color: white;
+                        }
+                    }
+                    .readmore{
+                        padding: 20px 40px;
+                        font-family: Roboto, sans-serif;
+                        font-size: 14px;
+                        border-radius: 100px;
+                        background-color: #ffb320;
+                        color: white;
+                        fill: none;
+                        border: 0px;
+                        transition: 0.6s;
+                        &:hover{
+                            box-shadow: 5px 10px rgba(255, 255, 255, 0.451);
+                        }
+                    }
+                    .change{
+                        margin-top: 180px;
+                        margin-left: 2px;
+                        display: inline !important;
+                        padding: 5px 16px;
+                        font-size: 14px;
+                        font-family: Roboto, sans-serif;
+                        background-color: white;
+                        border-radius: 100px;
+                        color: #ffb320;
+                        border: 0px;
+                    }
+                }
+            }
+        }
+        .section-2{
+            .all-boxes{
+                display: flex;
+                justify-content: space-between;
+                margin: 70px 0px !important;
+                margin: auto;
+                .box {
+                    width: 25%;
+                    height: auto;
+                    position: relative;
+                    cursor: pointer;
+
+                    .fixed-btn{
+                        position: absolute;
+                        z-index: 111;
+                        background-color: orange;
+                        color: white;
+                        padding: 5px 20px;
+                        top: 20px;
+                        left: 10px;
+                        font-family: Robot, sans-serif;
+                    }
+                }
+                
+                .box::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 0;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    opacity: 0;
+                    transition: opacity 0.6s ease;
+                }
+                
+                .box img {
+                    width: 100%;
+                    filter: brightness(40%);
+                    transition: filter 0.6s ease;
+                }
+                
+                .box .card-text {
+                    position: absolute;
+                    bottom: 4px;
+                    left: 0;
+                    width: 100%;
+                    padding: 10px;
+                    background-color: orange;
+                    color: white;
+                    transform: translateY(30%);
+                    transition: transform 0.6s ease;
+                    opacity: 0;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+
+                    p{
+                        font-size: 24px;
+                        margin-bottom: 20px;
+                        font-family: Robot,sans-serif;
+                        font-weight: 700;
+                    }
+                    span{
+                        display: block;
+                        margin-bottom: 10px;
+                        font-family: Robot,sans-serif;
+                    }
+                }
+                
+                .box:hover::before {
+                    opacity: 1;
+                }
+                
+                .box:hover img {
+                    filter: brightness(100%);
+                }
+                
+                .box:hover .card-text {
+                    transform: translateY(0%);
+                    opacity: 1;
+                }
+                
+            }
+        }
+        .section-3{
+            background-image: url("https://preview.colorlib.com/theme/gamewarrior/img/recent-game-bg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #eef2f6;
+            .container{
+                .recent-texts{
+                    margin: auto;
+                    text-align: center;
+                    button{
+                        padding: 5px 20px;
+                        color: white;
+                        font-weight: 700;
+                        outline: none;
+                        border: none;
+                        background-color: rgba(252, 48, 191, 0.779);
+                        margin-top: 100px;
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        font-size: 35px;
+                        font-family: Roboto, sans-serif;
+                        font-weight: 700;
+                    }
+                }
+                .recent-game-boxes{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-bottom: 50px;
+                    margin-top: 50px;
+
+                    .game-box{
+                        width: 32%;
+                        background-color: white;
+                        position: relative;
+                        
+                        button{
+                            position: absolute;
+                            margin: 10px 10px;
+                            border: none;
+                            outline: none;
+                            padding: 5px 10px;
+                            background-color: rgba(252, 48, 191, 0.779);
+                            color: white;
+                            font-family: Roboto , sans-serif;
+                            font-weight: 600;
+                            i{
+                                font-size: 18px;
+                            }
+                        }
+                        img{
+                            width: 100%;
+                        }
+                        .box-text{
+                            padding: 15px 9px;
+
+                            p{
+                                font-size: 23px;
+                                margin-bottom: 20px;
+                                font-family: Roboto, sans-serif;
+                                font-weight: 700;
+                            }
+
+                            span{
+                                font-size: 14px;
+                                margin-bottom: 20px;
+                                font-family: Roboto, sans-serif;
+                                font-weight: 400;
+                                display: block;
+                            }
+                            .game-comment{
+                                font-weight: 700;
+                                color: rgba(252, 48, 191, 0.779);
+                            }
+                        }
+                        .star{
+                            position: absolute;
+                            bottom: 0;
+                            right: 3px;
+                            background-color: orange;
+                        }
+                        .like{
+                            position: absolute;
+                            bottom: 0;
+                            right: 43px;
+                        }
+                        
+                    }
+
+                }
+            }
+        }
+        .section-4{
+            background-image: url("https://preview.colorlib.com/theme/gamewarrior/img/pattern.png");
+            .container{
+                button{
+                    border: none;
+                    padding: 10px 20px;
+                    background-color: #fb6e10;
+                    color: white;
+                    font-weight: 600;
+                    margin-top: 100px;
+                }
+                .tournament-boxes{
+                    display: flex;
+                    justify-content: space-between;
+                    .tournament-box{
+                        position: relative;
+                        display: flex;
+                        justify-content: space-between;
+                        background-color: #252525;
+                        margin-bottom: 50px;
+                        margin-right: 20PX;
+                        padding: 50px 40px;
+                        button{
+                            position: absolute;
+                            top: -100px;
+                            left: 0;
+                            background-color: #ffb320;
+                            color: #131313;
+                        }
+                        img{
+                            width: 40%;
+                            margin-right: 15px;
+                        }
+                        .tournament-texts{
+                            .tournament-title{
+                                font-size: 25px;
+                                color: #ffb320;
+                                font-family: Roboto, sans-serif;
+                                font-weight: 600;
+                                margin-bottom: 20px;
+                            }
+                            p{
+                                color: #686a6d;
+                                font-size: 14px;
+                                font-family: Roboto, sans-serif;
+                                margin-top: 11px;
+                                span{
+                                    color: white;
+                                    margin-left: 5px;
+                                }
+                            }
+                            .price{
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        background-color: #252525;
+        .container{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0px;
+            align-items: center;
+            span{
+                color: #7295aa;
+                font-family: Roboto, sans-serif;
+                font-size: 14px;
+            }
+            nav{
+                margin: auto;
+                margin-left: 380px;
+    
+                ul{
+                    display: flex;
+                    
+                    li{
+                        margin-right: 40px;
+                        a{
+                            color: #7295aa;
+                            font-size: 14px;
+                            font-family: Roboto, sans-serif;
+                            transition: 0.4s;
+                            font-weight: 500;
+                        }
+    
+                        &:hover{
+                            a{
+                                color: #e2a122;
+                            }
+                        }
+                    }
+                }
+        }
+        }
+    }
+}
